@@ -54,3 +54,28 @@ var arr=[10,20,30,40]
 var arr1=[100,200,300,400]
 var arr2=[...arr,...arr1]
 console.log(arr2);
+
+//Question 4
+const d = new Date()
+const day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+console.log("Today is:", day[d.getDay()])
+var a = "AM"
+var x = d.getHours()
+if (x > 12) {
+    x = x - 12;
+    a = "PM";
+}
+else if (x == 12) {
+    a = "PM"
+}
+else if (x == 0) {
+    x = 12;
+}
+console.log("Current Time is:", d.getHours(), a, ":", d.getMinutes(), ":", d.getSeconds())
+
+//question 5
+dd = d.getDate()
+mm = d.getMonth()
+yy = d.getFullYear()
+console.log(`${mm}-${dd}-${yy}`)
+
